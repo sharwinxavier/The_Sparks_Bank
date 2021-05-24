@@ -21,8 +21,32 @@ include("connection.php");
 body,
 main {
   height: 100%;
+  width:100%;
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+		/* Styles */
+    html, body{
+
+overflow-x:hidden;
+}
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:50%;
 }
 
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+		/* Styles */
+    
+		}
+
+
+
+
+
+		}
 ::selection {
   background:  #34495e;
   color: #fff;

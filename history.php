@@ -1,6 +1,4 @@
-<?php
-include("connection.php");
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,9 +47,13 @@ include 'navbar.php';
             <?php 
              include 'connection.php';
 
-             $sql ="select * from transaction";
+             $sql ="SELECT * from transaction";
  
              $query =mysqli_query($con, $sql);
+             if($query === FALSE) { 
+              die(mysqli_error());
+           }
+           
                 $no = 1;
                 while($row=mysqli_fetch_assoc($query)){
                     echo '

@@ -1,6 +1,3 @@
-<?php
-include("connection.php");
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +29,7 @@ main {
 <body>
 <?php
   include 'connection.php';
-  $query = "SELECT * from user_details ";
+  $query = "SELECT * from user_details";
   $result = mysqli_query($con,$query);
   ?>
 <?php 
