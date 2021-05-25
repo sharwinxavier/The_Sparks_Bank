@@ -23,12 +23,12 @@ main {
   height: 100%;
   width:100%;
 }
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-		/* Styles */
-    html, body{
-
-overflow-x:hidden;
+@media only screen and (max-width: 600px) {
+  html,body {
+    overflow-x: hidden;
+  }
 }
+
 #buttons{
   display: flex;
   align-items: center;
@@ -80,6 +80,14 @@ overflow-x:hidden;
   align-items: center;
   justify-content: center;
 }
+/* #buttons1{
+  margin-top: 100px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 button.btn{
   background: transparent;
   color: white;
@@ -136,6 +144,37 @@ button.btn-2:active:after {
 	height: 100%;
 
 }
+@media only screen and (max-width: 600px) {
+#buttons{
+  display:block;
+
+}
+button.btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-left: -100px;
+   
+}
+button.btn-1{
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-left: 92px;
+}
+}
+
 	</style>
 </head>
 
@@ -151,9 +190,9 @@ button.btn-2:active:after {
         <h1 style="color: aliceblue;">The Sparks Bank</h1>
         <div id="buttons" class="container"><a href="viewcustomers.php" >
     <button class="btn btn-1">View Customers</button></a>
-    <a href="history.php" >
-    <button class="btn btn-2">Transfer History</button></a>
-  </div>
+ <a href="history.php" >
+    <button class="btn btn-2">Transfer History</button></a></div>
+  
    
    
       </div> <!-- .col-md-6 -->
@@ -166,11 +205,11 @@ button.btn-2:active:after {
 	<nav  class="navbar navbar-inverse navbar-fixed-bottom ">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
         
       </button> -->
-      <div class="navbar-brand center" ><h5 style="margin-top:0px;">Internship project by Sharwin Xavier R @ The Sparks Foundation</h5></div>
+      <div  class="navbar-brand justify"><h5 style="margin-top:0px; ">Internship project by Sharwin Xavier R @ The Sparks Foundation</h5></div>
     </div> <!-- .navbar-header -->
    
   </div> <!-- .container -->

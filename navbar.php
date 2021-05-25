@@ -27,4 +27,10 @@ background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
 
 .navbar-inverse {
   transition: all 0.2s ease-in;
+}
+@media only screen and (max-width: 600px) {
+.navbar-inverse {
+    transition: all 0.2s ease-in;
+    margin-bottom: -3px;
+}
 }</style>

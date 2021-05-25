@@ -72,10 +72,16 @@ else {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <style>
+@media only screen and (max-width: 600px) {
+  html,body {
+    overflow-x: hidden;
+  }
+
+}
 html,
 body,
 main {
-  height: 100%;
+  height: 101.5%;
 }
 .photo-cover {
   background: #34495e no-repeat center center / cover fixed;
@@ -90,6 +96,16 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+#buttons{
+  margin-top:7px;
+  height:80%;
+  width:120%;
+  margin-left:-34px;
+  
+}
+
 }
 button.btn{
   background: transparent;
@@ -173,25 +189,25 @@ button.btn-2:active:after {
 			<table class="table ">
 				<tr>
                     
-					<th class="text-center" style="color:white;">ID</th>
-					<th class="text-center" style="color:white;">Name</th>
-					<th class="text-center" style="color:white;">Mobile Number</th>
-					<th class="text-center" style="color:white;">Email</th>
-                    <th class="text-center" style="color:white;">Balance</th>
+					<th class="text-center" style="color:#222222;">ID</th>
+					<th class="text-center" style="color:#222222;">Name</th>
+					<th class="text-center" style="color:#222222;">Mobile Number</th>
+					<th class="text-center" style="color:#222222;">Email</th>
+                    <th class="text-center" style="color:#222222;">Balance</th>
 				</tr>
                 <tr>
-                    <td class="text-center" style="color:white;"><?php echo $row['id'] ?></td>
-                    <td class="text-center" style="color:white;"><?php echo $row['name'] ?></td>
-                    <td class="text-center" style="color:white;"><?php echo $row['mob_no'] ?></td>
-                    <td class="text-center" style="color:white;"><?php echo $row['email'] ?></td>
-                    <td class="text-center" style="color:white;"><?php echo $row['current_balance'] ?></td>
+                    <td class="text-center" style="color:#bdb3b3;"><?php echo $row['id'] ?></td>
+                    <td class="text-center" style="color:#bdb3b3;"><?php echo $row['name'] ?></td>
+                    <td class="text-center" style="color:#bdb3b3;"><?php echo $row['mob_no'] ?></td>
+                    <td class="text-center" style="color:#bdb3b3;"><?php echo $row['email'] ?></td>
+                    <td class="text-center" style="color:#bdb3b3;"><?php echo $row['current_balance'] ?></td>
                 </tr>
                 </table>
                 </div>
                 </div>
                 <br><br><br>
                 <div class="form-group">
-        <label class="col-sm-2 control-label" style="color:white; font-size:17px; width:13%; padding-top:5px;">Transfer To:</label>
+        <label class="col-sm-2 control-label" style="color:#bdb3b3; font-size:17px; width:13%; padding-top:5px;">Transfer To</label>
         <div class="col-sm-4">
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
@@ -219,8 +235,8 @@ button.btn-2:active:after {
         </select>
         </div>
         </div>
-        <label class="col-sm-2 control-label"  style=" margin-left: 23px; margin-top:-15px; color:white; font-size:17px; width:13%; padding-top:5px;">Amount</label>
-					<div class="col-sm-4" style=" margin-left: -20px; margin-top:-15px;">
+        <label class="col-sm-2 control-label"  style=" margin-bottom:20px; margin-top:-15px; color:#bdb3b3; font-size:17px; width:13%; padding-top:5px;">Amount</label>
+					<div class="col-sm-4" style=" margin-top:-15px;">
 						<input type="number" name="amount1" class="form-control" placeholder="Specify the Amount" >
 					</div>
                     <div id="buttons" class="container">
